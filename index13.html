@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <tittle>Navbar</tittle>
+        <style>
+        body{
+            margin:0%;
+font-family: Arial, Helvita, sans-serif;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: chocolate;
+        }
+.topnav a {
+float: left;
+color:blueviolet;
+text align: center;
+padding: 14px 16px;
+text-decoration: none;
+font size: 17px;
+       }
+       .topnav a:hover {
+        background-color: aquamarine;
+        color:brown;
+       }
+       .topnav a.active {
+        background-color:aqua;
+        color: azure;
+       }
+</style> 
+         <body>
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+           <a href_="#">About_Us</a>
+           <a href_="#">Gallery_Us</a>
+           <a href_="#">Contact_Us</a>
+</div>
+<section>
+    <img class="myslides" src="C:\Users\My PC\Pictures\Camera Roll\WIN_20241023_19_08_23_Pro (2).jpg" style="height:500px;">
+    <img class="myslides" src="C:\Users\My PC\Pictures\Camera Roll\WIN_20241023_19_08_24_Pro.jpg" style="height:500px;">
+</section>
+<script>
+var myIndex = 0;
+    carousel();
+
+    function  carousel() {
+        var i;
+        var x = document.getElementsByClassName("myslides");
+for (i = 0; i < x.length; i++){
+    x[i].style.display = "none";
+}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1}
+ x[myIndex -1].style.display = "block";
+ setTimeout(carousel, 3000);
+}
+</script>   
+</body>
+</html>
